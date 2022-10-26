@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Happy Moments - Отель СПб</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="static/images/logo.png">
+  <link rel="icon" href="static/images/mini_logo.png">
   <script type="text/javascript" src="https://bnovo.ru/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
 </head>
 <body>
@@ -13,11 +13,14 @@
     <div class="container">
       <div class="header-content">
         <a href="index.html">
-          <img src="static/images/logo.png" height="99" alt="site identity" />
+          <img src="static/images/logo.svg" height="50" alt="site identity" />
         </a>
 
         <nav class="site-nav">
           <ul class="clean-list site-links">
+            <li>
+              <a id="checkRooms" href="" target="_blank">Номера</a>
+            </li>
             <li>
               <a href="https://reservationsteps.ru/rooms/index/7623eac4-d00f-4de6-99f1-4190f415fae0" target="_blank">Бронирование</a>
             </li>
@@ -34,10 +37,12 @@
     <section class="section">
       <div class="hero-box">
         <div class="container">
-          <div class="hero-text">
-            <h1>Забронируйте номер в отеле прямо сейчас!</h1>
+          <div class="widget_box">
+            <div class="hero-text">
+              <h1>Забронируйте номер в отеле прямо сейчас!</h1>
+            </div>
+            <div id="_bn_widget_"></div>
           </div>
-          <div id="_bn_widget_"></div>
         </div>
       </div>
     </section>

@@ -119,7 +119,7 @@ select {
 }
 
 .main-header {
-    position: absolute;
+    position: relative;
     padding: 20px 0;
     z-index: 9;
     right: 0;
@@ -237,16 +237,21 @@ select {
     }
 }
 
+.widget_box {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
 .hero-box {
     display: flex;
     justify-content: center;
     width: 100vw;
-    padding: 100px 0;
     background-image: url(static/images/bg-dark.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 300px 0;
+    padding: 200px 0;
 }
 
 .hero-box .hero-text h1,
@@ -297,7 +302,7 @@ select {
 
 @media (max-width: 1024px) {
     .hero-box {
-        padding: 200px 0;
+        padding: 100px 0;
     }
     .hero-box .hero-text h1 {
         font-size: 36px;
@@ -308,6 +313,10 @@ select {
     .check-button > a {
         width: 70%;
         font-size: 1em;
+    }
+
+    .widget_box {
+        gap: 2.5rem;
     }
 }
 
