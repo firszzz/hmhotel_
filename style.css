@@ -348,7 +348,7 @@ select {
     justify-content: center;
     width: 100vw;
     padding: 125px 30px;
-    background-image: url(static/images/bg-1.jpg);
+    background-image: url(static/images/bg-1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
