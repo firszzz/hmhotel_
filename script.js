@@ -91,3 +91,16 @@ let month = date.getMonth() + 1;
 let year = date.getFullYear();
 
 checkR.href = `https://reservationsteps.ru/rooms/index/7623eac4-d00f-4de6-99f1-4190f415fae0?lang=ru&colorSchemePreview=0&onlyrooms=&name=&surname=&email=&phone=&orderid=&servicemode=0&firstroom=0&dfrom=${day}-${month}-${year}&dto=${day + 2}-${month}-${year}&adults=1`;
+
+const ham = document.querySelector(".hamburger");
+const navM = document.querySelector(".site-links");
+
+ham.addEventListener("click", () => {
+    ham.classList.toggle("active");
+    navM.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    ham.classList.remove("active");
+    navM.classList.remove("active");
+}));
