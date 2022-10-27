@@ -274,7 +274,7 @@ select {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin: 0 0 15px;
-    color: var(--purple-color);
+    color: var(--blue-color);
     font-weight: bold;
 }
 
