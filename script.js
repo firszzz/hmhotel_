@@ -69,7 +69,7 @@ function init(){
                 inp_color: "#222222",
                 //inp_bordhover: "#30b6bc",
                 //inp_bordcolor: "#30b6bc",
-                border: "on",
+                // border: "on",
                 //border_color: "#30b6bc",
                 title: "Онлайн бронирование",
                 inp_alpha: "100",
@@ -94,13 +94,21 @@ checkR.href = `https://reservationsteps.ru/rooms/index/7623eac4-d00f-4de6-99f1-4
 
 const ham = document.querySelector(".hamburger");
 const navM = document.querySelector(".site-links");
+const logo = document.querySelector(".logo");
 
 ham.addEventListener("click", () => {
     ham.classList.toggle("active");
     navM.classList.toggle("active");
+    if(logo.classList.contains("hide")) {
+        logo.classList.remove("hide");
+    }
+    else {
+        logo.classList.add("hide");
+    }
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     ham.classList.remove("active");
     navM.classList.remove("active");
+    logo.style.display = "none";
 }));

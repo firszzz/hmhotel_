@@ -157,6 +157,10 @@ select {
     align-items: center;
 }
 
+.logo {
+    display: block;
+}
+
 .clean-list {
     display: flex;
     justify-content: space-around;
@@ -207,6 +211,10 @@ select {
         display: block;
     }
 
+    .hamburger.active .logo {
+        opacity: 0;
+    }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -219,7 +227,9 @@ select {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-
+    .main-header .site-nav .site-links li {
+        font-size: 12px;
+    }
 }
 
 .clean-list {
@@ -312,7 +322,8 @@ select {
     text-align: center;
     text-transform: uppercase;
     line-height: 2em;
-    color: var(--blue-color);
+    text-shadow: 2px 2px 2px #000;
+    color: white;
 }
 
 .hero-box .hero-text h1 {
@@ -393,7 +404,7 @@ select {
 #map {
     width: 60%;
     height: 30rem;
-    border: 5px solid var(--blue-color);
+    border: 5px solid var(--purple-color);
 }
 
 .map-box {
@@ -487,4 +498,8 @@ select {
 }
 .info > div > a:hover {
     text-decoration: underline;
+}
+
+.hide {
+    display: none;
 }
